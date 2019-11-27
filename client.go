@@ -336,6 +336,11 @@ func (c *Client) NewGetAccountService() *GetAccountService {
 	return &GetAccountService{c: c}
 }
 
+// NewGetCoinService init getting account service
+func (c *Client) NewGetCoinService() *GetCoinService {
+	return &GetCoinService{c: c}
+}
+
 // NewListTradesService init listing trades service
 func (c *Client) NewListTradesService() *ListTradesService {
 	return &ListTradesService{c: c}
